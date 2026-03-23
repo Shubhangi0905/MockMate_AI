@@ -1,0 +1,10 @@
+{
+  "name": "mockmate-ai",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "run_backend": "python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000",
+    "run_backend_prod": "python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000"
+  }
+}
+

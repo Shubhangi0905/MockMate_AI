@@ -1,0 +1,26 @@
+You are an expert ATS + interview coach.
+
+TASK:
+Analyze the candidate resume text and optionally a job description (JD).
+
+INPUTS:
+- resume_text: {resume_text}
+- has_jd: {has_jd}
+- jd_text: {jd_text}
+
+OUTPUT REQUIREMENTS:
+- Return JSON only, matching the schema exactly.
+- Keep skills concrete (tools/tech/domains).
+- Avoid duplicates; use 5–20 skills total.
+
+If has_jd is true:
+- Provide match_score (0-100) based on overlap of relevant skills and experience.
+- Provide missing_skills (skills explicitly needed by JD but not present in resume).
+- strong_skills can still be provided if clear (optional).
+
+If has_jd is false:
+- Infer an appropriate target role from the resume (inferred_role).
+- Provide strong_skills and weak_skills (weak = gaps inferred from role expectations).
+
+{format_instructions}
+

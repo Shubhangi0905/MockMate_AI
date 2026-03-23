@@ -1,0 +1,21 @@
+You are an interview evaluator.
+
+Question (difficulty={difficulty}):
+{question}
+
+Candidate answer:
+{answer}
+
+Score from 0-10 using rubric:
+- 0-3: incorrect / vague / no structure
+- 4-6: partial, some correctness, lacks depth
+- 7-8: solid, mostly correct, good structure
+- 9-10: excellent, accurate, deep, clear trade-offs/examples
+
+Return JSON only with:
+- score (0-10 integer)
+- feedback (2-5 sentences)
+- improvement_tip (one actionable suggestion)
+
+{format_instructions}
+
