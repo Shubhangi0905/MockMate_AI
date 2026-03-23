@@ -20,7 +20,7 @@ def _cors_origins() -> list[str]:
     return [
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "https://mock-mate-ai-phi.vercel.app/",
+        "https://mock-mate-ai-phi.vercel.app",
     ]
 
 def _cors_origin_regex() -> str | None:
